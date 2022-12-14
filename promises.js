@@ -62,9 +62,9 @@ function deletePost() {
     })
 }
 
-Promise.all([createPost,updateLastUserActivityTime]).then(() =>{
-    deletePost().then(console.log(posts));
-})
+// Promise.all([createPost,updateLastUserActivityTime]).then(() =>{
+//     deletePost().then(console.log(posts));
+// })
 
 // createPost({title: 'post three', body: 'this is post three'})
 // .then(updateLastUserActivityTime).then(console.log(`before created post 4 ${user.lastActTime}`))
