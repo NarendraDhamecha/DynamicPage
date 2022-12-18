@@ -36,7 +36,11 @@ function onSubmit(e)
       for(let i=0; i<res.data.length; i++){
         showDetailsOnScreen(res.data[i]);
       }
-    });
+    })
+    .catch((err) => {
+      document.body.innerHTML = err;
+      console.log(err);
+    })
   })
 
   function showDetailsOnScreen(user)
